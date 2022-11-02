@@ -1,0 +1,6 @@
+user clicks save -> browser executes onsubmit event handler
+	form.onsubmit prevents default post behaviour, adds new note to the notes array, resets input field, calls redrawNotes function
+		redrawNotes creates a ul with all notes from notes array as li children, removes old ul element from #notes div, appends new ul to #notes div
+	form.onsubmit continues; executes sendToServer function
+		sendToServer -> Browser sends HTTP POST request with new note in json format to server
+

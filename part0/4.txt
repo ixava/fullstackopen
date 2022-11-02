@@ -1,0 +1,3 @@
+browser->server HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note?field1="Ah"
+server-->browser HTTP status 302 redirect https://studies.cs.helsinki.fi/exampleapp/notes
+browser loads the notes page all over again as depicted in example diagram
